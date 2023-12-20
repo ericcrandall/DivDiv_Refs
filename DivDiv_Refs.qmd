@@ -1,0 +1,86 @@
+---
+title: "Create Citations for DivDiv Trait Data"
+author: "Eric Crandall"
+format: html
+editor: source
+---
+
+# Setup
+```{r}
+library(googledrive)
+library(googlesheets4)
+library(tidyverse)
+library(readxl)
+library(knitcitations)
+ library(RefManageR)
+
+```
+# Goal
+
+The "Marinerds" subgroup of the Diversity and Divergence working group (of the Evolving Seas RCN) has collected a bunch of traits for marine species that have datasets up on the INSDC SRA. We'd like to see how these traits are correlated with measures of genetic diversity. The goal here is to download the raw Google Sheet that we created, clean it up a bit and look up all of the references for traits that we dropped into the document, outputing a numbered reference list for the table.
+
+```{r}
+setwd("/Users/eric/github/DivDiv_Clean")
+drive_auth()
+gs4_auth()
+
+
+master <- read.delim("list-allfinal115.txt", sep = "", header = FALSE) %>% 
+                    dplyr::rename("dataset_name"="V1") %>% dplyr::select(dataset_name) %>%
+          mutate(dataset_name = str_remove(dataset_name,"bioprj_"))
+
+#using <- googledrive::shared_drive_find(pattern = "^working_list")
+#using <- drive_find(shared_drive = "divdiv")
+#using <- googledrive::drive_ls(path = using, pattern = "working_datasheets", recursive = F)
+#using <- googledrive::drive_ls(path = using, pattern = "working_list_marine_projects_with_10indivs-12-4-2020", 
+#                               recursive = F)
+#using$name #check we just have the one master trait df file, then download/read it into R
+#using <- googlesheets4::range_read(using, sheet = 1) %>% as.data.frame() %>% mutate(run_name = #paste("bioprj_",link,sep=""))
+
+
+
+#dd_traits <- read_excel(path = "working_list_marine_projects_with_10indivs-12-4-2020.xlsx") %>% mutate(final_keepers = link %in% master$dataset_name)
+# read in the data, keep on the ones in master, and remove a duplicate entry for Exaiptasia
+dd_traits <- read_excel(path = "working_list_marine_projects_with_10indivs-12-4-2020.xlsx") %>%  
+                filter(link %in% master$dataset_name) %>% filter(organism_biosamp != "Exaiptasia diaphana")
+
+dd_citations <- dd_traits %>% select(ends_with("citation"))
+
+```
+
+```{r}
+
+parse_url <- function(x){
+  
+  if(str_detect(x,"|")){
+    x <- x %>% str_split("\\|", simplify=T) %>% str_squish()
+  }
+  DOI <- x %>% str_extract("10.\\d{4,9}/[-._;()/#:A-Za-z0-9]+")
+  print(paste("DOI is",DOI))
+  
+  if(is.na(DOI[1])){
+    online_citation <- BibEntry(bibtype="online", title="Unknown", author = "Unknown", number = "Unknown", year = "Unknown", 
+                             url = x, key = stringi::stri_rand_strings(1,8), textVersion = x )
+    record_as_cited(online_citation)
+    return(paste0("@",online_citation$key))
+  } else{
+  citet(DOI)
+  }
+}
+
+cite_options(citation_format="pandoc")
+
+
+for(a in dd_citations$Larval_feeding_citation){
+  cat("parsing",a,"\n\n")
+  if(is.na(a)){out <- NA} else{
+  out <- parse_url(a)}
+  write_lines(out,file="outs.rmd", append = T)
+  write_lines("",file="outs.rmd", append = T)
+}
+
+write.bibtex(file = "test.bib")
+
+#cleanbib()
+
+```

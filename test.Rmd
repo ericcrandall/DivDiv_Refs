@@ -1,0 +1,19 @@
+---
+title: "Clean DivDiv Trait Data"
+author: "Eric Crandall"
+format: html
+bibliography: test.bib
+csl: nature.csl
+---
+
+citation
+@foxton1964observations
+NA
+@Graham_2013
+@Graham_2013
+@Graham_2013
+@Graham_2013
+@Graham_2013
+@Graham_2013
+@cowen1997relationships
+@cowen1997relationships
