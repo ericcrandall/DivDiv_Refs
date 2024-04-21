@@ -12,7 +12,7 @@ library(googlesheets4)
 library(tidyverse)
 library(readxl)
 library(knitcitations)
- library(RefManageR)
+library(RefManageR)
 
 ```
 # Goal
@@ -41,7 +41,7 @@ master <- read.delim("list-allfinal115.txt", sep = "", header = FALSE) %>%
 
 #dd_traits <- read_excel(path = "working_list_marine_projects_with_10indivs-12-4-2020.xlsx") %>% mutate(final_keepers = link %in% master$dataset_name)
 # read in the data, keep on the ones in master, and remove a duplicate entry for Exaiptasia
-dd_traits <- read_excel(path = "working_list_marine_projects_with_10indivs-12-4-2020.xlsx") %>%  
+dd_traits <- read_excel(path = "working_list_marine_projects_with_10indivs-4_18_24.xlsx") %>%  
                 filter(link %in% master$dataset_name) %>% filter(organism_biosamp != "Exaiptasia diaphana")
 
 dd_citations <- dd_traits %>% select(ends_with("citation"))
@@ -52,27 +52,51 @@ dd_citations <- dd_traits %>% select(ends_with("citation"))
 
 parse_url <- function(x){
   
-  if(str_detect(x,"|")){
+  if(str_detect(x,"\\|")){
+    print("multiple citations detected - splitting")
     x <- x %>% str_split("\\|", simplify=T) %>% str_squish()
   }
-  DOI <- x %>% str_extract("10.\\d{4,9}/[-._;()/#:A-Za-z0-9]+")
-  print(paste("DOI is",DOI))
   
-  if(is.na(DOI[1])){
+  if(str_detect(x,"10.\\d{4,9}/[-._;()/#:A-Za-z0-9]+")[1]){
+    
+    DOI <- x %>% str_extract("10.\\d{4,9}/[-._;()/#:A-Za-z0-9]+")
+    print(paste("This is a DOI:",DOI))
+    citet(DOI)
+  } else if (str_detect(x,"http")[1]){
+    online_citation <- NULL
+    URL <-  x %>% str_extract("http.+")
+    print(paste("This is a URL:", URL))
     online_citation <- BibEntry(bibtype="online", title="Unknown", author = "Unknown", number = "Unknown", year = "Unknown", 
                              url = x, key = stringi::stri_rand_strings(1,8), textVersion = x )
     record_as_cited(online_citation)
-    return(paste0("@",online_citation$key))
-  } else{
-  citet(DOI)
+    paste0("@",online_citation$key)
+} else {
+  
+    text_citation <- x
+    print(paste("Treating this as a text citation:", text_citation))
+    citet(text_citation)
   }
+  
 }
 
-cite_options(citation_format="pandoc")
+cite_options(citation_format="pandoc",cite.style = "numeric")
+
+
+write_lines("# Larval Feeding Citations\n\n", file = "outs.rmd", append = T)
 
 
 for(a in dd_citations$Larval_feeding_citation){
-  cat("parsing",a,"\n\n")
+  cat("parsing",a,"\n")
+  if(is.na(a)){out <- NA} else{
+  out <- parse_url(a)}
+  write_lines(out,file="outs.rmd", append = T)
+  write_lines("",file="outs.rmd", append = T)
+}
+
+write_lines("# Body Size Citations\n\n", file = "outs.rmd", append = T)
+
+for(a in dd_citations$Body_Size_citation){
+  cat("parsing",a,"\n")
   if(is.na(a)){out <- NA} else{
   out <- parse_url(a)}
   write_lines(out,file="outs.rmd", append = T)
@@ -84,3 +108,5 @@ write.bibtex(file = "test.bib")
 #cleanbib()
 
 ```
+
+How to cite fishbase?

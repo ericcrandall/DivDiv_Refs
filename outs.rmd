@@ -3,817 +3,472 @@ title: "Clean DivDiv Trait Data"
 author: "Eric Crandall"
 format: rtf
 bibliography: test.bib
-csl: nature.csl
+csl: science.csl
 ---
 
+# Larval Feeding Citations
 
-@Timm_2020
 
-@Gaither_2015
+@foxton1964observations
 
-@Reich_2020, @Kitchen_2019
+@cowen1997relationships
 
-NA
+@Graham_2013
 
-@Reich_2020, @Kitchen_2019
+@Graham_2013
 
-@Reich_2020, @Kitchen_2019
+@Graham_2013
 
-@Bongaerts_2017
+@Graham_2013
 
-@Gonzalez_Zapata_2018
+@Graham_2013
 
-@Saenz_Agudelo_2015
+@Graham_2013
 
-@Catalano_2020
+@cowen1997relationships
 
-@Laporte_2015
+@cowen1997relationships
 
-@Laporte_2015
+@cowen1997relationships
+
+@cowen1997relationshipsa
 
 @Cornwell_2020
 
-@Xuereb_2018
+@Li_2011
 
-@Clucas_2018
+@Kooyman_1996
 
-@Stovall_2018
+@2014
 
-@Lavretsky_2016
+@2018
 
-@Titus_2019
+@Wolfowicz_2016
+
+@cowen1997relationships
+
+@Arellano_2014
+
+@dulvy1997evolutionary
+
+@dulvy1997evolutionary
+
+@dulvy1997evolutionarya
+
+@Macedo_2019
+
+@christens1990nest
+
+@Moran_1997
+
+@haber1986rare
+
+@Arkhipkin_1996
+
+@cowen1997relationshipsa
+
+@cowen1997relationshipsa
+
+@2017
+
+NA
+
+@cowen1997relationshipsa
+
+@2020
+
+@Grigor_2017
+
+@wqOf4qtB
+
+@cowen1997relationshipsa
+
+@ladah2003fertilization
+
+@Ramee_2016
+
+@Scott_1954
+
+@Churchill_2016
+
+@ye2023lunar
+
+@Marquis_2005
+
+@Baird_2009
+
+@btA82Vcw
+
+@nkJCeMaG
+
+@2016
+
+@cowen1997relationshipsa
+
+@Annis_2007
+
+@tuomi1988components
+
+@Wells_2018
+
+@cowen1997relationshipsa
+
+@Ba9cdkSz
+
+@Galatius_2016
+
+@2007
+
+@10.5657/KFAS.2004.37.6.478
+
+@GyhVxrAs
+
+@Cairns_1999
+
+@cowen1997relationshipsa
+
+@cowen1997relationshipsa
+
+@olafsdottir2010growth
+
+@Baird_2009
+
+@sprung1983reproduction
+
+@Villanueva_2016
+
+@Collins_2018
+
+@M__2001
+
+@Baird_2009
+
+@Hettinger_2013
+
+@Fenaux_1985
+
+@cowen1997relationships
+
+@leis1991pelagic
+
+@Timm_2021
+
+@2020a
+
+@Hohn_1996
+
+@grahame1989reproduction
+
+@Pfaller_2019
+
+@leis1991pelagic
+
+@Baird_2009
+
+@Balon_2004
+
+@cowen1997relationshipsa
+
+@Baird_2009
+
+@Baird_2009
+
+@Kooyman_1996
+
+@Kooyman_1996
+
+@Kooyman_1996
+
+@Moreno_2008
+
+@Guerra_Castro_2021
+
+@Timm_2020
+
+@Baweja_2016
+
+@2015
+
+@wourms1991reproduction
+
+@wourms1991reproduction
+
+@wourms1991reproduction
+
+@wourms1991reproductiona
+
+@wourms1991reproduction
+
+@wourms1991reproduction
+
+@Moran_2007
+
+@Gould_2016
+
+@2015a
+
+@cowen1997relationships
+
+@cowen1997relationshipsa
+
+@Baird_2009
+
+@britomanzano2013effect
+
+@cowen1997relationshipsa
+
+@cowen1997relationships
+
+@Bartilotti_2019
+
+@2015
+
+@takeshita1997embryonic
+
+@LEE_2008
+
+@JM6YUM2C
+
+@QF3indIJ
+
+@2014a
+
+@cowen1997relationshipsa
+
+@cowen1997relationships
+
+@nelson2016fishes
+
+# Body Size Citations
+
+
+@sudnik2015maturation
+
+@grim1989vestibuliferan
+
+@Agudo_Adriani_2016
+
+@Dornelas_2017
+
+@Zubillaga_2007
+
+@enzensberger2015universitäts
+
+@Voss_2006
+
+@UEcqxQV6
+
+@2015
+
+@2015a
+
+@https://doi.org/10.1594/pangaea.900866
+
+@https://doi.org/10.1594/pangaea.900866
+
+@Cornwell_2020
+
+@VsddCb45
+
+@Kooyman_1996
+
+@2014
+
+@2018
+
+@enzensberger2015universitäts
 
 @Thia_2021
 
-@Xu_2018
+@fP6odcA1
 
-NA
+@https://doi.org/10.1594/pangaea.900866
 
-NA
+@https://doi.org/10.1594/pangaea.900866
 
-NA
+@https://doi.org/10.1594/pangaea.900866
 
-@Plough_2017
+@un0hw5z5
 
-NA
+@6794LsEa
 
-@Gleason_2016
+@enzensberger2015universitätsa
 
-@RzBUgMsL
+@haber1986rare
 
-@Xz3rfVSU
+@enzensberger2015universitäts
 
-@Hilborn_2017, @Jansson_2020
+@Jansson_2020
 
-@Salas_2019
+@2015a
 
-@Rv9Sy03f
+@2017
 
-@Chang_2018
+@enzensberger2015universitätsa
 
-@Le_Moan_2016
+@https://doi.org/10.1594/pangaea.900866
 
-NA
+@2020
 
-NA
+@Ufx5q3Ty
 
-@F6TnNpb6
+@enzensberger2015universitätsa
 
-@Hosoya_2019
+@2015
 
-NA
+@enzensberger2015universitäts
 
-@Oziolor_2018
+@andersonjr2001national
 
-@Healy_2018
+@2015
 
-NA
+@https://doi.org/10.1594/pangaea.900866
 
-@3clrC2Sg
+@2015a
 
-@Wepfer_2020
+@veron1992hermatypic
 
-@Wepfer_2020
+@veron1992hermatypic
 
-@Delgado_2019, @Zemlak_2010, @G_rski_2015
+@2015
 
-@Fang_2018
+@2015a
 
-@Crane_2018
+@2016
 
-@Benestan_2015, @Benestan_2016
+@2015
 
-@De_Wit_2020
+@enzensberger2015universitäts
 
-@Pearman_2020
+@Manyak_Davis_2013
 
-@Hundt_2019
+@yhht4ShQ
 
-@Fern_ndez_2015
+@2015
 
-@Fern_ndez_2015
+@uFqiV6en
 
-@Hodel_2018
+@Galatius_2016
 
-@Zhang_2019
+@Estrada_2008
 
-@Zhao_2017
+@Lim_2010
 
-NA
+@2015
 
-@Puritz_2016
+@Goffredo_2005, @Caroselli_2012
 
-@Hosoya_2019
+@2015a
 
-NA
+@2015
 
-NA
+@https://doi.org/10.1594/pangaea.900866
 
-@Paterno_2019
+@Nishikawa_2008
 
-@Combosch_2017
+@enzensberger2015universitätsa
 
-@Collins_2018
+@enzensberger2015universitätsa
 
-@Leydet_2018
+@palomares2011organizing
 
-@Manzello_2019
+@M__2001
 
-@yYUVRywd
+@bak1998coral
 
-@Paterno_2017
+@zu_Ermgassen_2013
 
-NA
+@Boudouresque_2013
 
-@Hoey_2018
+@2015a
 
-@Timm_2019
+@https://doi.org/10.1594/pangaea.900866
 
-@Cammen_2018
+@r1VLxLNz
 
-@Lah_2016
+@2020a
 
-@WaE1EjAf
+@Brownell_1987
 
-@Schiebelhut_2018
+@enzensberger2015universitätsa
 
-@Pfaller_2019
+@enzensberger2015universitätsa
 
-@Momigliano_2018
+@https://doi.org/10.1594/pangaea.900866
 
-@van_Oppen_2018
+@richmond1987energetics
 
-@Nunez_2015
+@Mayden_1992
 
-@Torquato_2019
+@2015a
 
-@Dimond_2017
+@Brandt_2009
 
-NA
+@sudek2012histological
 
-@Clucas_2018
+@Kooyman_1996
 
-@Clucas_2018
+@Kooyman_1996
 
-@Clucas_2018
+@Kooyman_1996
 
-@WZjLYVl1
+@flock1992species
 
-@Hodel_2018
+@enzensberger2015universitäts
 
-@PN7Plyfs
+@1
 
-@Le_Cam_2019
+@MyCIzFxA
 
-@Montes_2013, @2015
+@https://doi.org/10.1594/pangaea.900866
 
 @Vaux_2019
 
-@Andrews_2018
+@https://doi.org/10.1594/pangaea.900866
 
-@Andrews_2018
+@https://doi.org/10.1594/pangaea.900866
 
-@NTqUptKf
+@https://doi.org/10.1594/pangaea.900866
 
-@Andrews_2018
+@https://doi.org/10.1594/pangaea.900866
 
-@Xu_2017
+@Baeck_2012
 
-@Purcell_2018
-
-@Gould_2019
-
-@Portnoy_2015
-
-@QydPcQvv
-
-@e35Po6Xa
-
-@Bongaerts_2017
-
-NA
-
-@Mattingsdal_2019
-
-@Carreras_2017
-
-@Timm_2020
-
-@Puncher_2018
-
-@RrXUyYGm
-
-@Colston_Nepali_2019
-
-@Colston_Nepali_2019
-
-@3oKa0oFc
-
-@Shafer_2016
-
-@Bernardi_2018
-
-@Bernardi_2018
-
-@Hosoya_2019
-
-@jjonBieb
-
-@JuvYMfMd
-
-@Graham_2013
-
-@Graham_2013
-
-@Graham_2013
-
-@Graham_2013
-
-@Graham_2013
-
-@Graham_2013
-
-@bh5UJ5GF
-
-@AV1TuVfr
-
-@wsBYUKMM
-
-@yQ4zDbLU
-
-@Cornwell_2020
-
-@Li_2011
-
-@Kooyman_1996
-
-@2014
-
-@2018
-
-@Wolfowicz_2016
-
-@41ACS8fv
-
-@Arellano_2014
-
-@8luyh3m3
-
-@EoOD0TNa
-
-@M25u9vEA
-
-@Macedo_2019
-
-@AbNDaDmm
-
-@Moran_1997
-
-@Vq2nA8OU
-
-@Arkhipkin_1996
-
-@FDve7loQ
-
-@rv5SYEq4
-
-@2017
-
-@Bloecher_2013
-
-@nTTkUusd
-
-@2020
-
-@Grigor_2017
-
-@g72MW0vS
-
-@5MfDgXgE
-
-@Q1BMrLlU
-
-@Ramee_2016
-
-@Scott_1954
-
-@Churchill_2016
-
-@dSjWb4KB
-
-@Marquis_2005
-
-@Baird_2009
-
-@2s35rfsU
-
-@CubuwnlX
-
-@A6vUPFwD
-
-@Annis_2007
-
-@E1yGHLjI
-
-@Wells_2018
-
-@039nHOMe
-
-@mmy0PgyV
-
-@Galatius_2016
-
-@2007
-
-@10.5657/KFAS.2004.37.6.478
-
-@M4j04SvV
-
-@Cairns_1999
-
-@HtkekArx
-
-@t2ZZtR16
-
-@WDndgbyJ
-
-@Baird_2009
-
-@kLuHaeoM
-
-@Villanueva_2016
-
-@Collins_2018
-
-@M__2001
-
-@Baird_2009
-
-@Hettinger_2013
-
-@Fenaux_1985
-
-@bekiO62p
-
-@inONe75C
-
-@Timm_2021
-
-@2016
-
-@2020a
-
-@Hohn_1996
-
-@rq11AIyv
-
-@Pfaller_2019
-
-@jE5EiCcc
-
-@Baird_2009
-
-@Balon_2004
-
-@MYBDoWhD
-
-@Baird_2009
-
-@Baird_2009
-
-@Kooyman_1996
-
-@Kooyman_1996
-
-@Kooyman_1996
-
-@Moreno_2008
-
-@Guerra_Castro_2021
-
-@Timm_2020
-
-@Baweja_2016
-
-@DloifVJx
-
-@mT1W5Pu5
-
-@eoTWDMnE
-
-@BiWlua4J
-
-@XNUo1Gzk
-
-@LrhaRR2e
-
-@fKZJdjMA
-
-@Moran_2007
+@2015a
 
 @Gould_2016
 
-@EcXTrbke
+@https://doi.org/10.1594/pangaea.900866
 
-@DYcfbVn7
+@2015
 
-@uqRTCXSS
+@2015
 
-@Baird_2009
+@Brandt_2009
 
-@XVW2JeYg
+@enzensberger2015universitätsa
 
-@gRHEt2kq
+@https://doi.org/10.1594/pangaea.900866
 
-@kSuNWyKQ
+@2015a
 
-@Bartilotti_2019
+@Griffiths_1983
 
-@cv82uA0G
+@2015a
 
-@IoOlKXxC
+@2015
 
-@LEE_2008
+@KPNhpO57
 
-@4is097pw
+@2018a
 
-@0EyM9ENP
+@Hoving_2015, @Golikov_2019
 
 @2014a
 
-@MzzNpK8z
+@2015
 
-@VRQxJB8l
+@2015a
 
-@vvGI0Yy6
-
-@IWfqwcV6
-
-@LljlCwvE
-
-@Graham_2013
-
-@Graham_2013
-
-@Graham_2013
-
-@Graham_2013
-
-@Graham_2013
-
-@Graham_2013
-
-@UNFnGeP2
-
-@YkDG6oVl
-
-@ynyudfAR
-
-@fMz0ZtbZ
-
-@Cornwell_2020
-
-@Li_2011
-
-@Kooyman_1996
-
-@2014
-
-@2018
-
-@Wolfowicz_2016
-
-@TX8jI2Lq
-
-@Arellano_2014
-
-@LqECp0mr
-
-@FByzvpKw
-
-@0MzDCYeY
-
-@Macedo_2019
-
-@lKbYNGgW
-
-@Moran_1997
-
-@OYIiEpw7
-
-@Arkhipkin_1996
-
-@GhilkSRH
-
-@K0kPMZ17
-
-@2017
-
-@Bloecher_2013
-
-@RqtKkF6p
-
-@2020
-
-@Grigor_2017
-
-@ud2uiD5k
-
-@fxomfQvM
-
-@FLN4VjIY
-
-@Ramee_2016
-
-@Scott_1954
-
-@Churchill_2016
-
-@q8AgutAf
-
-@Marquis_2005
-
-@Baird_2009
-
-@BGt5632z
-
-@5MqNEtip
-
-@qvcnsSE1
-
-@Annis_2007
-
-@y9sjC5BK
-
-@Wells_2018
-
-@sDxArSsM
-
-@H0rqMD6d
-
-@Galatius_2016
-
-@2007
-
-@10.5657/KFAS.2004.37.6.478
-
-@fN3SirQJ
-
-@Cairns_1999
-
-@oi7Bm4i3
-
-@K9kqdyMQ
-
-@I8n9YwNI
-
-@Baird_2009
-
-@lWJgaIT0
-
-@Villanueva_2016
-
-@Collins_2018
-
-@M__2001
-
-@Baird_2009
-
-@Hettinger_2013
-
-@Fenaux_1985
-
-@cbD0tTRs
-
-@EuH0JsSq
-
-@Timm_2021
-
-@2016
-
-@2020a
-
-@Hohn_1996
-
-@2BbGSDuT
-
-@Pfaller_2019
-
-@dOA8z807
-
-@Baird_2009
-
-@Balon_2004
-
-@L7ii3pJb
-
-@Baird_2009
-
-@Baird_2009
-
-@Kooyman_1996
-
-@Kooyman_1996
-
-@Kooyman_1996
-
-@Moreno_2008
-
-@Guerra_Castro_2021
-
-@Timm_2020
-
-@Baweja_2016
-
-@xOr6aGb5
-
-@6riPwsjg
-
-@AnqBSzYo
-
-@1PPRS3yT
-
-@yEz3hJMV
-
-@JNxoUUgp
-
-@3vqxTLEa
-
-@Moran_2007
-
-@Gould_2016
-
-@l6chB9NQ
-
-@oW8AJDtP
-
-@o6Jzt91a
-
-@Baird_2009
-
-@r5am8qpM
-
-@XezlVAA2
-
-@uSLNitnm
-
-@Bartilotti_2019
-
-@hybZKqxa
-
-@oFOLdHFw
-
-@LEE_2008
-
-@wv1EOPLI
-
-@rzdX4zh7
-
-@2014a
-
-@lMu67FJF
-
-@oSfenFdq
-
-@lTDxKQqa
-
-@DkoAnvwn
-
-@SqfOtd5S
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-@1da0VLiq
-
-@ZLzDFfAE
-
-@e6fIZ44X
-
-@9z6YeIQZ
-
-Cornwell (2020)
-
-Li, Li, Sun, and Kong (2011)
-
-Kooyman (1996)
-
- (2014)
-
- (2018)
-
-Wolfowicz, Baumgarten, Voss, Hambleton et al. (2016)
-
-@esEd2Lwf
-
-Arellano, Van Gaest, Johnson, Vrijenhoek et al. (2014)
-
-@HfNcdLHR
-
-@ZTIy1YwG
-
-@l5M8MPiJ
-
-Macedo, Caballero, Mateos, Leblois et al. (2019)
-
-@xPZZQHIK
-
-Moran (1997)
-
-@iJc9o4Lv
-
-Arkhipkin (1996)
-
-@3CLMHTGL
-
-@tpMmE07f
-
- (2017)
-
-Bloecher, de
-Nys, Poole, and Guenther (2013)
-
-@naBL7KkB
-
- (2020)
-
-Grigor, Schmid, and Fortier (2017)
-
-@SKu777bm
-
-@JUhypOIX
-
-@lr5FXlsZ
-
-Ramee and Allen (2016)
-
-Scott (1954)
-
-Churchill, Kritzer, Dean, Grabowski et al. (2016)
-
-@ExaPCqw6
-
-Marquis, Baird, de
-Nys, Holmström et al. (2005)
-
-Baird, Guest, and Willis (2009)
-
-@IwXVWs3M
-
-@J07cIyr0
-
-@Qs59SUQW
-
-Annis, Incze, Steneck, and Wolff (2007)
-
-@6L6QGD9R
-
-@tbZg8Szs
-
-@K61xkG9d
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-Graham, Baird, Connolly, Sewell et al. (2013)
-
-@DVmHZwEO
-
-@vFtEMLWa
+@2015
 
