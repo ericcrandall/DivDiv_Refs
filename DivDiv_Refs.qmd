@@ -13,44 +13,13 @@ library(tidyverse)
 library(readxl)
 library(knitcitations)
 library(RefManageR)
+cite_options(citation_format="pandoc",cite.style = "numeric")
 
-```
-# Goal
-
-The "Marinerds" subgroup of the Diversity and Divergence working group (of the Evolving Seas RCN) has collected a bunch of traits for marine species that have datasets up on the INSDC SRA. We'd like to see how these traits are correlated with measures of genetic diversity. The goal here is to download the raw Google Sheet that we created, clean it up a bit and look up all of the references for traits that we dropped into the document, outputing a numbered reference list for the table.
-
-```{r}
-setwd("/Users/eric/github/DivDiv_Clean")
-drive_auth()
-gs4_auth()
-
-
-master <- read.delim("list-allfinal115.txt", sep = "", header = FALSE) %>% 
-                    dplyr::rename("dataset_name"="V1") %>% dplyr::select(dataset_name) %>%
-          mutate(dataset_name = str_remove(dataset_name,"bioprj_"))
-
-#using <- googledrive::shared_drive_find(pattern = "^working_list")
-#using <- drive_find(shared_drive = "divdiv")
-#using <- googledrive::drive_ls(path = using, pattern = "working_datasheets", recursive = F)
-#using <- googledrive::drive_ls(path = using, pattern = "working_list_marine_projects_with_10indivs-12-4-2020", 
-#                               recursive = F)
-#using$name #check we just have the one master trait df file, then download/read it into R
-#using <- googlesheets4::range_read(using, sheet = 1) %>% as.data.frame() %>% mutate(run_name = #paste("bioprj_",link,sep=""))
-
-
-
-#dd_traits <- read_excel(path = "working_list_marine_projects_with_10indivs-12-4-2020.xlsx") %>% mutate(final_keepers = link %in% master$dataset_name)
-# read in the data, keep on the ones in master, and remove a duplicate entry for Exaiptasia
-dd_traits <- read_excel(path = "working_list_marine_projects_with_10indivs-4_18_24.xlsx") %>%  
-                filter(link %in% master$dataset_name) %>% filter(organism_biosamp != "Exaiptasia diaphana")
-
-dd_citations <- dd_traits %>% select(ends_with("citation"))
-
-```
-
-```{r}
-
-parse_url <- function(x){
+parse_dd_citation <- function(x){
+# this function will parse citations from the master divdiv table, which can be one of three things:
+# 1) a DOI 2) A text citation 3) a URL
+# If 1 or 2, it will parse it with citet() from the `knit_citations` package.
+# If 3 it will enter it into the citation log as a URL without other fields Unknown
   
   if(str_detect(x,"\\|")){
     print("multiple citations detected - splitting")
@@ -61,52 +30,84 @@ parse_url <- function(x){
     
     DOI <- x %>% str_extract("10.\\d{4,9}/[-._;()/#:A-Za-z0-9]+")
     print(paste("This is a DOI:",DOI))
-    citet(DOI)
+    return(citet(DOI))
   } else if (str_detect(x,"http")[1]){
-    online_citation <- NULL
+    #online_citation <- NULL
     URL <-  x %>% str_extract("http.+")
     print(paste("This is a URL:", URL))
     online_citation <- BibEntry(bibtype="online", title="Unknown", author = "Unknown", number = "Unknown", year = "Unknown", 
-                             url = x, key = stringi::stri_rand_strings(1,8), textVersion = x )
+                             url = x, key = str_trunc(a,8,side = "left",ellipsis = ""), textVersion = x )
     record_as_cited(online_citation)
-    paste0("@",online_citation$key)
+    return(paste0("@",online_citation$key))
+   
 } else {
   
     text_citation <- x
     print(paste("Treating this as a text citation:", text_citation))
-    citet(text_citation)
+    return(citet(text_citation))
   }
   
 }
 
-cite_options(citation_format="pandoc",cite.style = "numeric")
+```
+
+# Goal
+
+The "Marinerds" subgroup of the Diversity and Divergence working group (of the Evolving Seas RCN) has collected a bunch of traits for marine species that have datasets up on the INSDC SRA. We'd like to see how these traits are correlated with measures of genetic diversity. The goal here is to download the raw Google Sheet that we created, clean it up a bit and look up all of the references for traits that we dropped into the document, outputing a numbered reference list for the table.
+
+## Read in the data
+
+First the final traits dataset, then the master dataset in Excel format, which is filtered down to the final set of 88 species.
+
+```{r}
+#| warning: false
+
+final_traits <- read_csv("final_biotic_traits.csv")  %>% 
+                            rename(PLD_point = PLD_point2)
+
+dd_traits <- read_excel(path = "working_list_marine_projects_with_10indivs-4_26_24.xlsx") %>%  
+                filter(link %in% final_traits$link) %>% filter(organism_biosamp != "Exaiptasia diaphana")
+
+cleanbib()
+#dd_citations <- names(dd_traits) %>% select(ends_with("citation"))
+
+```
+
+## Cite the data
+
+Replace all Fishbase citations with "Froese, R. and D. Pauly, Editors. 2000. FishBase 2000: concepts, design and data sources."
+
+Replace all Coral Traits with "The Coral Trait Database, a curated database of trait information for coral species from the global oceans"
+
+How to handle Wikipedia
 
 
-write_lines("# Larval Feeding Citations\n\n", file = "outs.rmd", append = T)
+```{r}
+
+for(trait in names(final_traits[3:11])){
+  citation_column <- paste0(trait,"_citation")
+  print(paste("Now Parsing", citation_column))
+  write_lines(paste("#", trait, "\n\n"), file = "traits_citations.rmd", append = T)
 
 
-for(a in dd_citations$Larval_feeding_citation){
-  cat("parsing",a,"\n")
-  if(is.na(a)){out <- NA} else{
-  out <- parse_url(a)}
-  write_lines(out,file="outs.rmd", append = T)
-  write_lines("",file="outs.rmd", append = T)
+  for(a in dd_traits[[citation_column]]){
+    cat("parsing",a,"\n")
+    if(is.na(a) | a == "NA"){out <- NA}
+    else{
+    out <- parse_dd_citation(a)}
+    write_lines(out,file="traits_citations.rmd", append = T)
+    write_lines("",file="traits_citations.rmd", append = T)
+  }
 }
 
-write_lines("# Body Size Citations\n\n", file = "outs.rmd", append = T)
-
-for(a in dd_citations$Body_Size_citation){
-  cat("parsing",a,"\n")
-  if(is.na(a)){out <- NA} else{
-  out <- parse_url(a)}
-  write_lines(out,file="outs.rmd", append = T)
-  write_lines("",file="outs.rmd", append = T)
-}
-
-write.bibtex(file = "test.bib")
+# this digs the citation list out of the knitcitations environment, removing one malformed citation
+citations <- do.call("c",knitcitations:::get_bib_list()[-5])
+write.bibtex(citations,file = "traits.bib")
 
 #cleanbib()
 
 ```
 
-How to cite fishbase?
+Need to do a search and remove with the following pattern in BBedit on traits.bib: number.date-parts = .+\n
+Finally, need to remove abcd suffixes from traits_citations.rmd
+
