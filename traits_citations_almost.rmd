@@ -1,0 +1,8 @@
+---
+title: "DivDiv Trait Data Citations"
+author: "Eric Crandall"
+format: docx
+bibliography: traits.bib
+csl: science.csl
+---
+
