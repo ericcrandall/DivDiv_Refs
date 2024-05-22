@@ -1,0 +1,101 @@
+---
+title: "DivDiv Trait Data Citations - 5 new ones"
+author: "Eric Crandall"
+format: docx
+bibliography: fivenew_traits.bib
+csl: science.csl
+---
+# ReturnToSpawningGround 
+
+
+NA
+
+@Madin_2016
+
+@inferential1973
+
+@fishbase2000
+
+@fishbase2000
+
+# Spawning_mode 
+
+
+NA
+
+@Baird_2009
+
+@cowen1997relationships
+
+@Ahlstrom_1962
+
+@takeshita1997embryonic
+
+# Larval_feeding 
+
+
+NA
+
+@Baird_2009
+
+@cowen1997relationshipsa
+
+@fishbase2000a
+
+@takeshita1997embryonic
+
+# isPlanktonic_atanypoint 
+
+
+NA
+
+@Baird_2009
+
+@cowen1997relationshipsa
+
+@Ahlstrom_1962
+
+@takeshita1997embryonic
+
+# isBenthic 
+
+
+# PLD_point 
+
+
+NA
+
+NA
+
+@Knutsen_2012
+
+@oozeki1995ontogenetic
+
+@Takeshita_1997
+
+# Body_Size 
+
+
+@d-turtle
+
+@veron1992hermatypic
+
+@https://doi.org/10.1594/pangaea.900866
+
+@fishbase2000a
+
+@fishbase2000
+
+# Fecundity_EggSize 
+
+
+@chuang2021specific
+
+@Okubo_2013
+
+@https://doi.org/10.1594/pangaea.900866
+
+@fishbase2000
+
+@takeshita1997embryonica
+
